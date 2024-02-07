@@ -1,4 +1,4 @@
-import test, { expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 test('Should display all comments from postId: 1 ', async ({ request }) => {
   const response = await request.get('/comments?postId=1');
